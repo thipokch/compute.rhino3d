@@ -19,11 +19,11 @@ Write-Host @"
 "@
 
 # check os is server
-$os = (Get-CimInstance -ClassName 'Win32_OperatingSystem').Caption
-if ($os -notlike '*server*') {
-    Write-Host "The script is intended for use on Windows Server. Detected '$os'" -ForegroundColor Red
-    exit 1
-}
+# $os = (Get-CimInstance -ClassName 'Win32_OperatingSystem').Caption
+# if ($os -notlike '*server*') {
+#     Write-Host "The script is intended for use on Windows Server. Detected '$os'" -ForegroundColor Red
+#     exit 1
+# }
 
 Write-Host "Root Script Path:" $PSScriptRoot
 
